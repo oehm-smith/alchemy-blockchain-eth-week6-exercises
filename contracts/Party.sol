@@ -14,6 +14,7 @@ contract Party {
         rsvps [msg.sender] = true;
         rsvps_array.push (msg.sender);
         // I believe that because it is external payable, any msg.value (the rsvp'er sends) will be added to contract balance
+
     }
 
     function payBill(address payable _venue, uint _bill) external {
